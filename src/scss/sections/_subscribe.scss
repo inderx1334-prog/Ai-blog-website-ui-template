@@ -3,12 +3,18 @@
 
 .subscribe {
     background-color: $dark-08;
+    height: 74px;
 
-    @media (min-width: $laptop) {}
+    @media (min-width: $laptop) {
+        height: 45px;
+    }
+
+    @media (min-width: $desktop) {
+    }
 
     &__link {
         color: $grey-60;
-        @include flex(space-between, center, 12px);
+        @include flex(space-between, center, 10px);
 
         .icon {
             width: 20px;
