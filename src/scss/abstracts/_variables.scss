@@ -34,16 +34,13 @@ $grey-95: #F1F1F3;
 $grey-97: #F7F7F8;
 $grey-99: #FCFCFD;
 
+// absolute white
+$white: #fff;
+
 
 // Fonts
-$kumbhSans: KumbhSans;
-$inter: Inter;
-
-//FontsSize
-$mobileTextFontSize: 14px;
-$laptopTextFontSize: 16px;
-$desktopTextFontSize: 18px;
-
+$kumbhSans: 'KumbhSans', sans-serif;
+$inter: 'Inter', sans-serif;
 
 // Media
 $mobile: 390px;
@@ -52,4 +49,3 @@ $desktop: 1920px;
 
 //border
 $borderdark15: 1px solid $dark-15;
-$border-radius: 8px;

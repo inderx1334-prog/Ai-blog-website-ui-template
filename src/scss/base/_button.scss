@@ -1,4 +1,43 @@
+@use '../abstracts/variables' as *;
+
 .button {
-    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    gap: 4px;
+    border-radius: 8px;
     font-size: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    height: 49px;
+    border: 1px solid $dark-15;
+    background-color: $dark-08;
+    font-family: $inter;
+    color: $grey-60;
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+        height: 63px;
+        border-radius: 12px;
+        gap: 10px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.burger {
+    @media (min-width: $laptop) {
+        display: none;
+    }
+    
+    svg {
+        height: 34px;
+        width: 34px;
+    }
 }

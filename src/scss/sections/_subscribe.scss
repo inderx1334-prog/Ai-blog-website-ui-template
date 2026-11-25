@@ -2,23 +2,57 @@
 @use '../abstracts/mixins' as *;
 
 .subscribe {
-    background-color: $dark-08;
     height: 74px;
+    overflow: hidden;
 
     @media (min-width: $laptop) {
         height: 45px;
     }
 
     @media (min-width: $desktop) {
+        height: 67px;
     }
 
     &__link {
         color: $grey-60;
+        font-family: $kumbhSans;
+        padding-top: 40px;
+        padding-bottom: 14px;
         @include flex(space-between, center, 10px);
+        @include text(400, 12px, 150%, -0.03em, $grey-60);
+
+        @media (min-width: $laptop) {
+            font-size: 14px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 16px;
+            @include flex(center, center, 10px);
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
 
         .icon {
             width: 20px;
             height: 20px;
+        }
+    }
+
+    &__mobileText {
+        @media (min-width: $laptop) {
+            display: none;
+        }
+    }
+
+    &__laptopText {
+        display: none;
+        
+        @media (min-width: $laptop) {
+            display: inline;
         }
     }
 }
