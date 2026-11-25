@@ -19,7 +19,7 @@
         padding-top: 40px;
         padding-bottom: 14px;
         @include flex(space-between, center, 10px);
-        @include text(400, 12px, 150%, -0.03em, $grey-60);
+        @include text($font-size: 12px);
 
         @media (min-width: $laptop) {
             font-size: 14px;
@@ -33,7 +33,6 @@
             font-size: 18px;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-size: 18px;
         }
 
         .icon {
