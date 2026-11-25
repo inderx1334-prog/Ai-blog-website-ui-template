@@ -1,3 +1,5 @@
+@use '../base/font-face' as *;
+
 // Absolute colors
 $white: #fff;
 $black: #000;
@@ -39,8 +41,8 @@ $white: #fff;
 
 
 // Fonts
-$kumbhSans: 'KumbhSans', sans-serif;
-$inter: 'Inter', sans-serif;
+$kumbhSans: 'KumbhSans';
+$inter: 'Inter';
 
 // Media
 $mobile: 390px;

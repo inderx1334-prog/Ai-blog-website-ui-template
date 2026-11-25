@@ -55,19 +55,29 @@
 
     &__link {
         height: 41px;
-        @include text(14px, $grey-50);
+        @include flex ($justify: center);
+        @include text($font-size: 14px);
+
+        @media (min-width: $desktop) {
+                height: 55px;
+                font-size: 18px;
+            }
 
         &_this-page {
             font-weight: 500;
             color: $white;
             background: $dark-08;
             width: 76px;
-            
+            border-radius: 6px;
+
+            @media (min-width: $desktop) {
+                border-radius: 10px;
+                width: 99px;
+            }
         }
     }
 
     &__burger {
-    
         @media (min-width: $laptop) {
             display: none;
         }
@@ -75,30 +85,6 @@
         svg {
             height: 34px;
             width: 34px;
-        }
-    }
-
-    &__button-contact {
-        display: none;
-
-        @media (min-width: $laptop) {
-            display: block;
-            width: 103px;
-            height: 41px;
-            border-radius: 6px;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 150%;
-            color: $dark-08;
-            background-color: $yellow-55;
-            font-family: $inter;
-        }
-
-        @media (min-width: $desktop) {
-            border-radius: 10px;
-            width: 137px;
-            height: 55px;
-            font-size: 18px;
         }
     }
 }

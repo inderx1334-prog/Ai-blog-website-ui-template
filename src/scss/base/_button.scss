@@ -1,11 +1,7 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as*;
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 14px 20px;
-    gap: 4px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 400;
@@ -17,6 +13,7 @@
     background-color: $dark-08;
     font-family: $inter;
     color: $grey-60;
+    @include flex ($justify: center, $align: center, $gap: 4px);
 
     @media (min-width: $desktop) {
         font-size: 18px;
@@ -28,6 +25,31 @@
     svg {
         width: 20px;
         height: 20px;
+    }
+
+    &_contact {
+        display: none;
+
+        @media (min-width: $laptop) {
+            display: flex;
+            width: 103px;
+            height: 41px;
+            border-radius: 6px;
+            font-weight: 500;
+            color: $dark-08;
+            background-color: $yellow-55;
+            transition: all 1s;
+
+            &:hover {
+                background: $yellow-80;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            border-radius: 10px;
+            width: 137px;
+            height: 55px;
+        }
     }
 }
 

@@ -10,10 +10,10 @@
 @mixin text($font-family: $inter, $font-weight: 400, $font-size: 14px, 
         $line-height: 150%, $letter-spacing: -0.03em,
         $color: $grey-60) {
+        font-family: $font-family;
         font-weight: $font-weight;
         font-size: $font-size;
         line-height: $line-height;
         letter-spacing: $letter-spacing;
         color: $color;
-        font-family: $font-family;
 }
