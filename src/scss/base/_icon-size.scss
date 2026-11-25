@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+
+.icon {
+    &_arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_logo {
+        width: 125px;
+        height: 35px;
+
+        @media (min-width: $laptop) {
+            width: 143px;
+            height: 40px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 179px;
+            height: 50px;
+        }
+    }
+
+    &_bars-3 {
+        height: 34px;
+        width: 34px;
+    }
+}
