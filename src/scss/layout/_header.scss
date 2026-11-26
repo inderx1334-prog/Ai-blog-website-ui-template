@@ -5,6 +5,8 @@
 .header {
     padding: 20px 0;
     background: $dark-10;
+    border-top: $borderdark15;
+    border-bottom: $borderdark15;
 
     &__row {
         display: flex;

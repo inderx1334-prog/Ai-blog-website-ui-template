@@ -1,3 +1,66 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .hero {
     padding-top: 40px;
+
+    &__subtitle {
+        margin-bottom: 14px;
+        @include text ($font-family: $kumbhSans, 
+        $font-weight: 500, $font-size: 18px, 
+        $line-height: 120%, $color: $dark-40);
+    }
+
+    &__main-title {
+        margin-bottom: 10px;
+        @include main-title;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        @include text ();
+    }
+
+    &__stats-list {
+        display: flex;
+        border-top: $borderdark15;
+    }
+
+    &__stat-item {
+        text-align: left;
+        
+
+        &_left {
+            padding-top: 20px;
+            width: 98px;
+            height: 78px;
+        }
+
+        &_center {
+            padding-top: 20px;
+            width: 98px;
+        }
+
+    }
+
+    &__stat-item + &__stat-item {
+        border-left: $borderdark15;
+    }
+
+    &__number-title {
+        font-family: $inter;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $white;
+    }
+
+    &__plus {
+        color: $yellow-55;
+    }
+
+    &__resources-text {
+        @include text();
+    }
 }
